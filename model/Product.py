@@ -11,8 +11,8 @@ class Product:
     Unit_price: float
 
     def __eq__(self, other):
-        return self.number == other.number
+        return self.Product_number == other.Product_number
     def __hash__(self):
-        return hash(self.number)
+        return hash(self.Product_number)
     def __str__(self):
         return f"{self.Product_number} - {self.Product} - {self.Product_color}"
